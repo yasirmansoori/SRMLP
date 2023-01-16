@@ -23,15 +23,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style(comingsoon).css" rel="stylesheet">
-  
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  
-  <!-- Template Main JS File -->
-  <script src="assets/js/main(comingsoon).js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+
 
 
 </head>
@@ -127,7 +119,7 @@
 
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact(coming soon).php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
@@ -154,7 +146,44 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
+          </div> -->
+
+
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="contact-form/contact.php" method="post" role="form" id="contact-form">
+              <div class="messages"></div>
+              <div class="controls">
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="form_name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="form_name" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-md-6 mt-3 mt-md-0">
+                    <label for="form_email">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="form_email" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="Form_subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="form_subject" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="form_message">Message</label>
+                  <textarea class="form-control" name="message" rows="10" required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="col-md-12">
+                  <input type="submit" class="btn btn-success btn-send" value="Send message">
+                </div>
+              </div>
+            </form>
           </div>
+
 
         </div>
 
@@ -171,7 +200,15 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="assets/js/main(comingsoon).js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
 </body>
 
 </html>
