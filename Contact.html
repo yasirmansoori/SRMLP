@@ -83,6 +83,8 @@
             <form class="row g-3" action="https://formsubmit.co/44b652df0a3ad28854a6c2fe0b77716f" method="POST">
               <!-- Honeypot -->
               <input type="text" name="_honey" style="display: none;">
+              <!-- Template -->
+              <input type="hidden" name="_template" value="table">
 
               <!-- Disable Captcha -->
               <input type="hidden" name="_captcha" value="false">
@@ -90,7 +92,7 @@
 
               <div class="col-md-6">
                 <label for="firstName" class="form-label">First Name</label>
-                <input type="text"  placeholder="John" class="form-control" name="name" id="firstName" required>
+                <input type="text" placeholder="John" class="form-control" name="name" id="firstName" required>
               </div>
               <div class="col-md-6">
                 <label for="lastName" class="form-label">Last Name</label>
@@ -98,7 +100,8 @@
               </div>
               <div class="col-md-8">
                 <label for="emailInfo" class="form-label">E-mail</label>
-                <input type="email" placeholder="Johndoe@example.com" class="form-control" name="email" id="emailInfo" required>
+                <input type="email" placeholder="Johndoe@example.com" class="form-control" name="email" id="emailInfo"
+                  required>
               </div>
               <div class="col-md-4">
                 <label for="phoneNumber" class="form-label">Phone Number</label>
