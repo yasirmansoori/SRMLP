@@ -77,58 +77,43 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="row mt-5">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>H-Block 115 Room no.</p>
+        <div class="row mt-1">
+          <div class="container mt-5">
+            <form class="row g-3" action="https://formsubmit.co/yasir.mansoori000@gmail.com" method="POST">
+              <!-- Honeypot -->
+              <input type="text" name="_honey" style="display: none;">
+    
+              <!-- Disable Captcha -->
+              <input type="hidden" name="_captcha" value="false">
+    
+              <input type="hidden" name="_next" value="https://haydn5.github.io/formsubmitdemo/success.html" >
+    
+              <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" name="name" id="firstName" required>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>yasir.mansoori000@gmail.com</p>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required>
               </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 7976523913</p>
+              <div class="col-md-8">
+                <label for="emailInfo" class="form-label">E-mail</label>
+                <input type="email" class="form-control" name="email" id="emailInfo" required>
               </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
+              <div class="col-md-4">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1 (415) 867-5309">
               </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <div class="col-md-12">
+                <label for="comments" class="form-label">Comments, questions?</label>
+                <textarea class="form-control" id="comments" name="comments,&nbsp;questions" rows="3" required></textarea>
               </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-
-          </div>
+        </div>
+         
 
         </div>
 
