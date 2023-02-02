@@ -35,46 +35,54 @@
     <div class="container d-flex flex-column align-items-center">
 
       <h1>SRMLP</h1>
-      <h2>We're working hard to improve our website and we'll ready to launch after</h2>
-      <div class="countdown d-flex justify-content-center" data-count="2023/01/30">
-        <div>
-          <h3>%d</h3>
-          <h4>Days</h4>
-        </div>
-        <div>
-          <h3>%h</h3>
-          <h4>Hours</h4>
-        </div>
-        <div>
-          <h3>%m</h3>
-          <h4>Minutes</h4>
-        </div>
-        <div>
-          <h3>%s</h3>
-          <h4>Seconds</h4>
-        </div>
-      </div>
+      <h2>We're working hard to improve our website and add new features to it.</h2>
 
-      <div class="subscribe">
-        <h4>Subscribe now to get the latest updates!</h4>
-        <form action="forms/notify.php" method="post" role="form" class="php-email-form">
-          <div class="subscribe-form">
-            <input type="email" name="email" required><input type="submit" value="Subscribe">
+      <div class="mx-auto" style="width: 500px;">
+        <h1>Contact Us</h1>
+
+        <form class="row g-3" action="https://formsubmit.co/44b652df0a3ad28854a6c2fe0b77716f" method="POST">
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+          <!-- Template -->
+          <input type="hidden" name="_template" value="table">
+
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://yasirmansoori.github.io/SRMLP/success-page">
+
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" placeholder="John" class="form-control" name="name" id="firstName" required>
           </div>
-          <div class="mt-2">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your notification request was sent. Thank you!</div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" placeholder="doe" class="form-control" name="Last&nbsp;Name" id="lastName" required>
+          </div>
+          <div class="col-md-8">
+            <label for="emailInfo" class="form-label">E-mail</label>
+            <input type="email" placeholder="Johndoe@example.com" class="form-control" name="email" id="emailInfo"
+              required>
+          </div>
+          <div class="col-md-4">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1 (415) 867-5309">
+          </div>
+          <div class="col-md-12">
+            <label for="comments" class="form-label">Comments, questions?</label>
+            <textarea class="form-control" id="comments" name="comments,&nbsp;questions" rows="3" required></textarea>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
       </div>
 
-      <div class="social-links text-center">
+      <!-- <div class="social-links text-center">
         <a href="https://yasirmansoori.github.io/" target="_blank"><i class="bi bi-globe"></i></a>
         <a href="https://github.com/yasirmansoori" target="_blank"><i class="bi bi-github"></i></a>
         <a href="#"><i class="bi bi-instagram"></i target="_blank"></a>
         <a href="https://www.linkedin.com/in/yasir-mansoori/" target="_blank"><i class="bi bi-linkedin"></i></a>
-      </div>
+      </div> -->
 
     </div>
   </header><!-- End #header -->
